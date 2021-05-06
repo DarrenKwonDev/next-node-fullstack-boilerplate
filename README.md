@@ -2,7 +2,7 @@
 
 ## stack  
 
-docker / next.ts / node.ts 
+docker / next.ts / node.ts  
 
 ## Backend : type-node-boilerplate
 
@@ -28,9 +28,9 @@ docker / next.ts / node.ts
 - 기존 프론트 보일러 플레이트 : https://github.com/DarrenKwonDev/FuzeNextBoilerplate  
 - 다만 제가 최근 코딩하는 방식이 조금 바뀌어서, 이 보일러 플레이트에서는 최대한 퓨어하게 뒀습니다.
 
+- [x] dark 모드 지원! `document.body.classList.add("dark-mode");` 꼴로 다크모드를 활성화할 수 있습니다
 - [x] eslint + prettier
 - [x] server,js, next.config.js, sitemap을 생성하는 스크립트 등은 그대로 js로 두었습니다.  
-
 
 ## Docker  
 
