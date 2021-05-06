@@ -12,8 +12,7 @@ export default class MyDocument extends Document<IProps> {
     try {
       context.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
         });
 
       const initialProps = await Document.getInitialProps(context);
@@ -45,10 +44,7 @@ export default class MyDocument extends Document<IProps> {
 
           {/* googld font */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;800&display=swap"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;800&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

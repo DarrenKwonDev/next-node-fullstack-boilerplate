@@ -6,9 +6,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 const prod = process.env.NODE_ENV === "production";
 
 module.exports = withBundleAnalyzer({
-  future: {
-    webpack5: true,
-  },
   compress: true, // gzip compress
   poweredByHeader: false, // Disabling x-powered-by
   webpack(config) {
