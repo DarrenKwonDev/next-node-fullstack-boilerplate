@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    command: --lower_case_table_names=1 # 대소문자 구분
+    container_name: mysql-db
+    environment:
+        - MYSQL_DATABASE=hyperlink
+        - MYSQL_ROOT_PASSWORD=hyper  
+        - TZ=Asia/Seoul
+    command:
+        - --character-set-server=utf8mb4
+        - --collation-server=utf8mb4_unicode_ci
+    volumes:
+        - ./db:/var/lib/mysql
+    ports:
+      - 3306:3306
